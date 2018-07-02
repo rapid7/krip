@@ -1,0 +1,59 @@
+{
+  "env": {
+    "development": {
+      "plugins": [
+        [
+          "transform-runtime",
+          {
+            "helpers": false,
+            "polyfill": false,
+            "regenerator": true
+          }
+        ]
+      ],
+      "presets": [
+        [
+          "env",
+          {
+            "loose": true,
+            "modules": false
+          }
+        ],
+        "stage-2"
+      ]
+    },
+    "production": {
+      "presets": [
+        [
+          "env",
+          {
+            "loose": true,
+            "modules": false
+          }
+        ],
+        "stage-2"
+      ]
+    },
+    "test": {
+      "plugins": [
+        [
+          "transform-runtime",
+          {
+            "helpers": false,
+            "polyfill": false,
+            "regenerator": true
+          }
+        ]
+      ],
+      "presets": [
+        [
+          "env",
+          {
+            "loose": true
+          }
+        ],
+        "stage-2"
+      ]
+    }
+  }
+}

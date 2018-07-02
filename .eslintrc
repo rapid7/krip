@@ -1,0 +1,12 @@
+{
+  "extends": ["rapid7/browser", "rapid7/strict"],
+  "globals": {
+    "__dirname": true,
+    "global": true,
+    "module": true,
+    "process": true,
+    "require": true
+  },
+  "parser": "babel-eslint",
+  "rules": {}
+}
